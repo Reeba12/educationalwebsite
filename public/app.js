@@ -1,0 +1,2 @@
+body{
+alert("WELCOME!");

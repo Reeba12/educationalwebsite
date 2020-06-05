@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn"onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="signup()">signup</button>
+            </div>
+            <div class="social-icons">
+                <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
+               <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+               <a href="https://youtube.com"><i class="fa fa-youtube"></i></a>
+                </div>
+                <form id="log"class="input-group" action="dasbord.html">
+                    <input type="text" class="input-field" placeholder="User ID" required>
+                    <input type="password" class="input-field" placeholder="Enter Password" required>
+                    <p class="pass">Not a member? <a href="signup.html">create account</a></p><br>
+                    <a href="dasbord.html"><button class="submit-btn">Submit</button></a></form>
+            </form>
+            <form id="sign" class="input-group" action="dasbord.html">
+                <input type="text" class="input-field" placeholder="User ID" required>
+                <input type="email" class="input-field" placeholder="Email ID" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <a href="dasbord.html"><button class="submit-btn">Submit</button></a>
+        </form>
+        </div>
+        
+    </div>
+    <script>
+        var x = document.getElementById("log");
+        var y = document.getElementById("sign");
+        var z = document.getElementById("btn");
+        function signup(){
+            x.style.left = "-300px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+            function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+
+        }
+    </script>
+    
+</body>
+</html>
